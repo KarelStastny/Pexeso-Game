@@ -65,9 +65,9 @@ const App = () => {
       if (firstCard.title === secondCard.title) {
         setFoundPairs([...foundPairs, firstCard.title]);
 
-        setfoundOnePair("Úspěšně jste našli 1 pár");
+        setfoundOnePair("Úspěšně jste našli 1 pár.");
       } else {
-        setfoundOnePair("Pár se neshoduje, zkuste to znova");
+        setfoundOnePair("Pár se neshoduje, zkuste to znova.");
       }
 
       // Reset první a druhé karty

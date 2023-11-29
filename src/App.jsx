@@ -55,7 +55,7 @@ const App = () => {
         setFirstCard("");
         setSecondCard("");
         setIsClickable(true);
-      }, 300);
+      }, 1000);
     }
   };
 
@@ -99,6 +99,7 @@ const App = () => {
     setNumberClick(0);
     setWon("");
     setIsClickable(true);
+    setfoundOnePair("")
   };
 
   
@@ -107,11 +108,11 @@ const App = () => {
   return (
     <section className="max-w-[800px] mx-auto bg-gray-100 p-4">
       <h1 className="text-orange-500 text-2xl md:text-3xl font-bold text-center my-4">Pexeso hra</h1>
-      {won && <div className="text-green-600 text-center font-semibold">Vyhráli jste</div>}
+      {won && <div className="text-green-600 text-center font-semibold">{won}</div>}
   
-      <div className="flex flex-wrap justify-between items-center mb-4">
+      <div className="flex flex-col md:flex-row justify-between items-center mb-4">
         <button className="bg-yellow-500 text-white font-semibold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300" onClick={resetGame}>Resetovat hru</button>
-        <div className="text-lg font-semibold">{foundOnePair}</div>
+        <div className="text-lg font-semibold min-h-[30px]">{foundOnePair}</div>
         <div>
           <span className="font-semibold">Počet kliknutí: </span>
           <span className="font-bold">{numberClick}</span>
@@ -134,7 +135,7 @@ const App = () => {
         </button>
       </Modal>
   
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-3 md:grid-cols-4  gap-2 md:gap-4">
         {cards.map((one, index) => {
            // Kontrola zda je karta aktivní pro vykreslení do stránky
            const isCardActive = activeCards.includes(index);

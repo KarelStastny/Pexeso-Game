@@ -9,7 +9,7 @@ import Image08 from './images/8.png';
 import Ornament from './images/ornament.png';
 
 
-export const data = [
+export const animals = [
     {
         image: Image01,
         blackImage: Ornament,
@@ -51,3 +51,46 @@ export const data = [
         title:"hundredleg"
     },
 ]
+
+// export const numbers = [
+//     {
+//         image: Image01,
+//         blackImage: Ornament,
+//         title:"babymonkey"
+//     },
+//     {
+//         image: Image02,
+//         blackImage: Ornament,
+//         title:"gorilla"
+//     },
+//     {
+//         image: Image03,
+//         blackImage: Ornament,
+//         title:"koala"
+//     },
+//     {
+//         image: Image04,
+//         blackImage: Ornament,
+//         title:"wulf"
+//     },
+//     {
+//         image: Image05,
+//         blackImage: Ornament,
+//         title:"girafe"
+//     },
+//     {
+//         image: Image06,
+//         blackImage: Ornament,
+//         title:"bear"
+//     },
+//     {
+//         image: Image07,
+//         blackImage: Ornament,
+//         title:"hamster"
+//     },
+//     {
+//         image: Image08,
+//         blackImage: Ornament,
+//         title:"hundredleg"
+//     },
+// ]

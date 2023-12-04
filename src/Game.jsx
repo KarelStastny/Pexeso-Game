@@ -59,7 +59,7 @@ const Game = () => {
         </Modal>
 
         <div className="grid grid-cols-3 md:grid-cols-4  gap-2 md:gap-4">
-          {cards.map((one, index) => {
+        { cards.map((one, index) => {
             // Kontrola zda je karta aktivní pro vykreslení do stránky
             const isCardActive = activeCards.includes(index);
             // páry které už byly nalezeny

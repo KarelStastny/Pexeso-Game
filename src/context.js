@@ -7,7 +7,7 @@ const AppContext = createContext();
 export const AppContextProvider = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
-  const [cards, setCards] = useState(shuffle([...animals, ...animals]));
+  const [cards, setCards] = useState([]);
   const [firstCard, setFirstCard] = useState("");
   const [secondCard, setSecondCard] = useState("");
   const [activeCards, setActiveCards] = useState([]);
@@ -79,7 +79,7 @@ export const AppContextProvider = ({ children }) => {
 
   // Zjištění vítězství
   useEffect(() => {
-    if (foundPairs.length == cards.length / 2) {
+    if (foundPairs.length == cards.length / 2 && foundOnePair.length > 1) {
       setWon("Vyhráli jste - chcete hru opakovat");
       setfoundOnePair("Našli jste všechny páry gratuluji.");
     }
@@ -92,7 +92,7 @@ export const AppContextProvider = ({ children }) => {
 
   // Reset hry vynulování všeho
   const resetGame = () => {
-    setCards(shuffle([...animals, ...animals]));
+    setCards([]);
     setActiveCards([]);
     setFirstCard("");
     setSecondCard("");

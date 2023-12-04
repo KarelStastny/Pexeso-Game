@@ -14,7 +14,7 @@ import Image44 from "./images/44.jpg"
 import Image55 from "./images/55.jpg"
 import Image66 from "./images/66.jpg"
 import Image77 from "./images/77.jpg"
-import Image88 from "./images/88.jpg"
+import Image88 from "./images/88.png"
 
 
 export const animals = [

@@ -75,7 +75,7 @@ const Game = () => {
                   src={isCardActive || found ? one.image : one.blackImage}
                   // zakázání klikání než dojde k prověření
                   onClick={isClickable ? () => clickCard(one, index) : null}
-                  className={`object-cover bg-gray-200 ${
+                  className={`object-cover  bg-gray-200 ${
                     isCardActive ||
                     (found && " border-8  bg-gray-600 border-pink-600")
                   }`}
